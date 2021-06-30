@@ -33,8 +33,8 @@ namespace POS
             LoginPage.setInputValue(LoginPage.password_input, creds.password);
             Driver.FindElement(By.XPath(LoginPage.login_button)).Click();
             wait.Until(e => e.FindElement(By.XPath(LoginPage.pos_button)));
-            Driver.FindElement(By.XPath(LoginPage.pos_button)).Click();           
-            
+            Driver.FindElement(By.XPath(LoginPage.pos_button)).Click();
+                        
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using System.Collections.Generic;
 using POS.Variables;
 
 namespace POS.Pages 
