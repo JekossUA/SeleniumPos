@@ -9,9 +9,7 @@ namespace POS
 {
     public class LoginQA1 : DriverHelper
     {
-        Credentials creds = new Credentials();
         
-
         [SetUp]
         public void Setup()
         {
@@ -25,24 +23,24 @@ namespace POS
         [Test]
         public void Test1()
         {
+            SingOnPage singOnPage = new SingOnPage();
+            StationsPage stationsPage = new StationsPage();
+            PosPage posPage = new PosPage();
+
             try
             {
-                CustomControls.waitElement(SingOnPage.username_input);
+               
+                singOnPage.waitUsername();
+                singOnPage.enterUserNameAndPassword("ym", "ym");
+                singOnPage.clickSingOn();
 
-                CustomControls.setInputValue(SingOnPage.username_input, Credentials.username);
-                CustomControls.setInputValue(SingOnPage.password_input, Credentials.password);
-                CustomControls.getElementXpath(SingOnPage.login_button).Click();
+                stationsPage.waitPosButton();
+                stationsPage.clickStationButton();
 
-                CustomControls.waitElement(StationsPage.pos_button);
+                posPage.waitArticlePanel();
 
-                CustomControls.getElementXpath(StationsPage.pos_button).Click();
-
-                CustomControls.waitElementToBeClickable(PosPage.article_items);
-
+                Assert.That(posPage.isVisibleArticlePanel(), Is.True);
                 
-
-                Driver.Close();
-
             }
             catch (Exception)
             {
@@ -50,6 +48,11 @@ namespace POS
             }
             
 
+        }
+        [TearDown]
+        public void closeBrowser()
+        {
+            Driver.Close();
         }
     }
 }
