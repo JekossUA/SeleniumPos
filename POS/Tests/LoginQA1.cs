@@ -18,6 +18,7 @@ namespace POS
         public void Setup()
         {
             Driver = new ChromeDriver();
+            Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(creds.time_in_seconds));
             Driver.Navigate().GoToUrl(envs.qa1);
             Driver.Manage().Window.Maximize();
             
@@ -26,15 +27,17 @@ namespace POS
         [Test]
         public void Test1()
         {
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(creds.time_in_seconds));
-            wait.Until(e => e.FindElement(By.XPath(LoginPage.username_input)));
+            Wait.Until(e => e.FindElement(By.XPath(LoginPage.username_input)));
 
             LoginPage.setInputValue(LoginPage.username_input, creds.username);
             LoginPage.setInputValue(LoginPage.password_input, creds.password);
-            Driver.FindElement(By.XPath(LoginPage.login_button)).Click();
-            wait.Until(e => e.FindElement(By.XPath(LoginPage.pos_button)));
-            Driver.FindElement(By.XPath(LoginPage.pos_button)).Click();
-                        
+            LoginPage.getElementXpath(LoginPage.login_button).Click();
+
+            Wait.Until(e => e.FindElement(By.XPath(LoginPage.pos_button)));
+
+            LoginPage.getElementXpath(LoginPage.pos_button).Click();
+
+
         }
     }
 }

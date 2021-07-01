@@ -3,3 +3,14 @@
 ################################################################################
 
 /.vs/POS
+POS/obj/project.nuget.cache
+POS/obj/project.assets.json
+POS/obj/POS.csproj.nuget.dgspec.json
+POS/obj/Debug/netcoreapp3.1/POS.pdb
+POS/obj/Debug/netcoreapp3.1/POS.genruntimeconfig.cache
+POS/obj/Debug/netcoreapp3.1/POS.dll
+POS/obj/Debug/netcoreapp3.1/POS.csproj.FileListAbsolute.txt
+POS/obj/Debug/netcoreapp3.1/POS.assets.cache
+POS/bin/Debug/netcoreapp3.1/POS.pdb
+POS/bin/Debug/netcoreapp3.1/POS.dll
+POS/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp

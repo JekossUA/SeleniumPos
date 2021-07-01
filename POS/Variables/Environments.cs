@@ -10,7 +10,7 @@ namespace POS.Variables
 
     }
 
-    class Credentials
+    public class Credentials
     {
         public readonly string username = "ym";
         public readonly string password = "ym";

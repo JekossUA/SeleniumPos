@@ -17,5 +17,10 @@ namespace POS.Pages
              Driver.FindElement(By.XPath(elementXpath)).SendKeys(value);
         }
 
+        public static IWebElement getElementXpath(string elementXpath)
+        {
+            return Driver.FindElement(By.XPath(elementXpath));
+        }
+
     }    
 }
