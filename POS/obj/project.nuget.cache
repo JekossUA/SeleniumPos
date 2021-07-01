@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7vFpdwpmopurg3PWcpmD1BtkDw9bRoMb1SS0Jv1EgxdYfLjZWioaquV58qkeL3xeGOJF/bXcY57ne5llellg3Q==",
+  "dgSpecHash": "ju7nqBChEAFmwdx+tvyyVvzwmd9CbgJ0y9B1ZzH9t6m1OEL5gQU1aaRgfrhrbSW5Vxv27wsYoM0lTZPX2Ki5Tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\y.mykhailovskyi\\source\\repos\\POS\\POS\\POS.csproj",
+  "projectFilePath": "C:\\Users\\y.mykhailovskyi\\Documents\\GitHub\\SeleniumPos\\POS\\POS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\microsoft.codecoverage\\16.10.0\\microsoft.codecoverage.16.10.0.nupkg.sha512",
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\microsoft.net.test.sdk\\16.10.0\\microsoft.net.test.sdk.16.10.0.nupkg.sha512",

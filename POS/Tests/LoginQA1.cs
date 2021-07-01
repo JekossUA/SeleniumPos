@@ -37,6 +37,9 @@ namespace POS
 
             LoginPage.getElementXpath(LoginPage.pos_button).Click();
 
+            Wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath(LoginPage.article_items)));
+            
+            Driver.Close();
 
         }
     }

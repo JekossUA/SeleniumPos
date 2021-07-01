@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.10.0": {
         "type": "package",
         "compile": {
@@ -990,6 +1002,21 @@
     }
   },
   "libraries": {
+    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+      "sha512": "xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
+      "type": "package",
+      "path": "dotnetseleniumextras.waithelpers/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+        "dotnetseleniumextras.waithelpers.nuspec",
+        "lib/net35/SeleniumExtras.WaitHelpers.dll",
+        "lib/net40/SeleniumExtras.WaitHelpers.dll",
+        "lib/net45/SeleniumExtras.WaitHelpers.dll",
+        "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll"
+      ]
+    },
     "Microsoft.CodeCoverage/16.10.0": {
       "sha512": "7g0UjAwhEi2OBBv8SDV3wZ6J103cQyZbKVgDy59fnNdlbv0XpUCfdBZiSW5yVK/d2jp6faCdGh7VnI/F2JZO+Q==",
       "type": "package",
@@ -4186,6 +4213,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Microsoft.NET.Test.Sdk >= 16.10.0",
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 4.0.0",
@@ -4200,11 +4228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\y.mykhailovskyi\\source\\repos\\POS\\POS\\POS.csproj",
+      "projectUniqueName": "C:\\Users\\y.mykhailovskyi\\Documents\\GitHub\\SeleniumPos\\POS\\POS.csproj",
       "projectName": "POS",
-      "projectPath": "C:\\Users\\y.mykhailovskyi\\source\\repos\\POS\\POS\\POS.csproj",
+      "projectPath": "C:\\Users\\y.mykhailovskyi\\Documents\\GitHub\\SeleniumPos\\POS\\POS.csproj",
       "packagesPath": "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\y.mykhailovskyi\\source\\repos\\POS\\POS\\obj\\",
+      "outputPath": "C:\\Users\\y.mykhailovskyi\\Documents\\GitHub\\SeleniumPos\\POS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4237,6 +4265,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "DotNetSeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[3.11.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.10.0, )"
