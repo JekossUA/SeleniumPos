@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ju7nqBChEAFmwdx+tvyyVvzwmd9CbgJ0y9B1ZzH9t6m1OEL5gQU1aaRgfrhrbSW5Vxv27wsYoM0lTZPX2Ki5Tg==",
+  "dgSpecHash": "5facWRMAv8647pnaEhNOotodjQFbAVb6AiLI/SaMBFu6htFzn9rT74oW90fc4IMUBI3yCR3Gd4iqriJAm7bdVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\y.mykhailovskyi\\Documents\\GitHub\\SeleniumPos\\POS\\POS.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512",
+    "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\selenium.webdriver.chromedriver\\91.0.4472.10100\\selenium.webdriver.chromedriver.91.0.4472.10100.nupkg.sha512",
     "C:\\Users\\y.mykhailovskyi\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

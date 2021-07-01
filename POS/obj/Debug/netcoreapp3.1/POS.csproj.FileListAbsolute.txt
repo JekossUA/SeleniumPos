@@ -195,3 +195,4 @@ C:\Users\y.mykhailovskyi\Documents\GitHub\SeleniumPos\POS\obj\Debug\netcoreapp3.
 C:\Users\y.mykhailovskyi\Documents\GitHub\SeleniumPos\POS\obj\Debug\netcoreapp3.1\POS.pdb
 C:\Users\y.mykhailovskyi\Documents\GitHub\SeleniumPos\POS\obj\Debug\netcoreapp3.1\POS.genruntimeconfig.cache
 C:\Users\y.mykhailovskyi\Documents\GitHub\SeleniumPos\POS\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll
+C:\Users\y.mykhailovskyi\Documents\GitHub\SeleniumPos\POS\bin\Debug\netcoreapp3.1\WebDriver.Support.dll

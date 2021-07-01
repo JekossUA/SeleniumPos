@@ -1,8 +1,7 @@
 using NUnit.Framework;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-using POS.Variables;
+using POS.Helpers;
 using POS.Pages;
 using System;
 
@@ -10,7 +9,6 @@ namespace POS
 {
     public class LoginQA1 : DriverHelper
     {
-        Environments envs = new Environments();
         Credentials creds = new Credentials();
         
 
@@ -18,8 +16,8 @@ namespace POS
         public void Setup()
         {
             Driver = new ChromeDriver();
-            Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(creds.time_in_seconds));
-            Driver.Navigate().GoToUrl(envs.qa1);
+            Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(Credentials.time_in_seconds));
+            Driver.Navigate().GoToUrl(Environments.qa1);
             Driver.Manage().Window.Maximize();
             
         }
@@ -27,19 +25,30 @@ namespace POS
         [Test]
         public void Test1()
         {
-            Wait.Until(e => e.FindElement(By.XPath(LoginPage.username_input)));
+            try
+            {
+                CustomControls.waitElement(SingOnPage.username_input);
 
-            LoginPage.setInputValue(LoginPage.username_input, creds.username);
-            LoginPage.setInputValue(LoginPage.password_input, creds.password);
-            LoginPage.getElementXpath(LoginPage.login_button).Click();
+                CustomControls.setInputValue(SingOnPage.username_input, Credentials.username);
+                CustomControls.setInputValue(SingOnPage.password_input, Credentials.password);
+                CustomControls.getElementXpath(SingOnPage.login_button).Click();
 
-            Wait.Until(e => e.FindElement(By.XPath(LoginPage.pos_button)));
+                CustomControls.waitElement(StationsPage.pos_button);
 
-            LoginPage.getElementXpath(LoginPage.pos_button).Click();
+                CustomControls.getElementXpath(StationsPage.pos_button).Click();
 
-            Wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath(LoginPage.article_items)));
+                CustomControls.waitElementToBeClickable(PosPage.article_items);
+
+                
+
+                Driver.Close();
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             
-            Driver.Close();
 
         }
     }

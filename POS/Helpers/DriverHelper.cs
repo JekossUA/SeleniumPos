@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace POS.Variables
+namespace POS.Helpers
 {
     public class DriverHelper
     {
