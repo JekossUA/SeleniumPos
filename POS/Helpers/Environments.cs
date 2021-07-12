@@ -14,6 +14,6 @@ namespace POS.Helpers
     {
         public static readonly string username = "ym";
         public static readonly string password = "ym";
-        public static readonly int time_in_seconds = 60;
+        public static readonly int sixtySeconds = 60;
     }
 }

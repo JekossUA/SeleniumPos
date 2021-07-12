@@ -9,15 +9,16 @@ namespace POS
 {
     public class LoginQA1 : DriverHelper
     {
-        
+
         [SetUp]
         public void Setup()
         {
+            
             Driver = new ChromeDriver();
-            Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(Credentials.time_in_seconds));
+            Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(Credentials.sixtySeconds));
             Driver.Navigate().GoToUrl(Environments.qa1);
             Driver.Manage().Window.Maximize();
-            
+
         }
 
         [Test]
@@ -29,24 +30,27 @@ namespace POS
 
             try
             {
-               
                 singOnPage.waitUsername();
-                singOnPage.enterUserNameAndPassword("ym", "ym");
+                singOnPage.enterUserNameAndPassword(Credentials.username, Credentials.password);
                 singOnPage.clickSingOn();
 
                 stationsPage.waitPosButton();
                 stationsPage.clickStationButton();
 
+                //posPage.waitAdminPanel();
+                //Assert.That(posPage.isClickableAdminPanel(), Is.True);
+                //posPage.waitShiftStartButton();
+                //posPage.clickShiftStartButton();
+
                 posPage.waitArticlePanel();
 
                 Assert.That(posPage.isVisibleArticlePanel(), Is.True);
-                
+
             }
             catch (Exception)
             {
                 throw;
             }
-            
 
         }
         [TearDown]
